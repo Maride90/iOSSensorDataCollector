@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE0EA0CD24562BA6005592D2 /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0EA0C424562BA5005592D2 /* Stats.m */; };
+		DE0EA0CE24562BA6005592D2 /* DescriptStatsWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE0EA0C624562BA6005592D2 /* DescriptStatsWrapper.mm */; };
+		DE0EA0CF24562BA6005592D2 /* DescriptStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0EA0C924562BA6005592D2 /* DescriptStats.cpp */; };
+		DE0EA0D024562BA6005592D2 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0EA0CC24562BA6005592D2 /* BinaryTree.cpp */; };
+		DE285F2B2418516100ABDA2F /* SensorFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE285F2A2418516100ABDA2F /* SensorFileManager.swift */; };
+		DE93BF5A24294CD700220071 /* GyroscopeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93BF5924294CD700220071 /* GyroscopeReader.swift */; };
+		DE93BF5C24294CEA00220071 /* AccelerometerReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93BF5B24294CEA00220071 /* AccelerometerReader.swift */; };
+		DE93BF5E2429510600220071 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93BF5D2429510600220071 /* SensorManager.swift */; };
+		DEB7187D200FD82D00C566A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7187C200FD82D00C566A9 /* AppDelegate.swift */; };
+		DEB7187F200FD82D00C566A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7187E200FD82D00C566A9 /* ViewController.swift */; };
+		DEB71882200FD82D00C566A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB71880200FD82D00C566A9 /* Main.storyboard */; };
+		DEB71884200FD82D00C566A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB71883200FD82D00C566A9 /* Assets.xcassets */; };
+		DEB71887200FD82D00C566A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB71885200FD82D00C566A9 /* LaunchScreen.storyboard */; };
+		DEB7D578242D677B0045E438 /* AccelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7D577242D677B0045E438 /* AccelModel.swift */; };
+		DEB7D57A242D67870045E438 /* GyroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7D579242D67870045E438 /* GyroModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE0EA0C424562BA5005592D2 /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
+		DE0EA0C524562BA5005592D2 /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		DE0EA0C624562BA6005592D2 /* DescriptStatsWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DescriptStatsWrapper.mm; sourceTree = "<group>"; };
+		DE0EA0C724562BA6005592D2 /* DescriptStatsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptStatsWrapper.h; sourceTree = "<group>"; };
+		DE0EA0C824562BA6005592D2 /* Accel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Accel-Bridging-Header.h"; path = "../../../../Desktop/Accel/Accel/Lib/Accel-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE0EA0C924562BA6005592D2 /* DescriptStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DescriptStats.cpp; sourceTree = "<group>"; };
+		DE0EA0CA24562BA6005592D2 /* BinaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		DE0EA0CB24562BA6005592D2 /* DescriptStats.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DescriptStats.hpp; sourceTree = "<group>"; };
+		DE0EA0CC24562BA6005592D2 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		DE285F2A2418516100ABDA2F /* SensorFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorFileManager.swift; sourceTree = "<group>"; };
+		DE93BF5924294CD700220071 /* GyroscopeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeReader.swift; sourceTree = "<group>"; };
+		DE93BF5B24294CEA00220071 /* AccelerometerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerReader.swift; sourceTree = "<group>"; };
+		DE93BF5D2429510600220071 /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		DEB71879200FD82D00C566A9 /* Accel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB7187C200FD82D00C566A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEB7187E200FD82D00C566A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEB71881200FD82D00C566A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEB71883200FD82D00C566A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEB71886200FD82D00C566A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEB71888200FD82D00C566A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB7D577242D677B0045E438 /* AccelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelModel.swift; sourceTree = "<group>"; };
+		DEB7D579242D67870045E438 /* GyroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB71876200FD82D00C566A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE0EA0C224562B74005592D2 /* FeaturesCalc */ = {
+			isa = PBXGroup;
+			children = (
+				DE0EA0C824562BA6005592D2 /* Accel-Bridging-Header.h */,
+				DE0EA0CC24562BA6005592D2 /* BinaryTree.cpp */,
+				DE0EA0CA24562BA6005592D2 /* BinaryTree.hpp */,
+				DE0EA0C924562BA6005592D2 /* DescriptStats.cpp */,
+				DE0EA0CB24562BA6005592D2 /* DescriptStats.hpp */,
+				DE0EA0C724562BA6005592D2 /* DescriptStatsWrapper.h */,
+				DE0EA0C624562BA6005592D2 /* DescriptStatsWrapper.mm */,
+				DE0EA0C524562BA5005592D2 /* Stats.h */,
+				DE0EA0C424562BA5005592D2 /* Stats.m */,
+			);
+			path = FeaturesCalc;
+			sourceTree = "<group>";
+		};
+		DE285F292418515200ABDA2F /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				DE285F2A2418516100ABDA2F /* SensorFileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		DE93BF5824294CBF00220071 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				DE93BF5D2429510600220071 /* SensorManager.swift */,
+				DE93BF5B24294CEA00220071 /* AccelerometerReader.swift */,
+				DE93BF5924294CD700220071 /* GyroscopeReader.swift */,
+				DEB7D577242D677B0045E438 /* AccelModel.swift */,
+				DEB7D579242D67870045E438 /* GyroModel.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		DEB71870200FD82D00C566A9 = {
+			isa = PBXGroup;
+			children = (
+				DEB7187B200FD82D00C566A9 /* Accel */,
+				DEB7187A200FD82D00C566A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB7187A200FD82D00C566A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB71879200FD82D00C566A9 /* Accel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB7187B200FD82D00C566A9 /* Accel */ = {
+			isa = PBXGroup;
+			children = (
+				DE0EA0C224562B74005592D2 /* FeaturesCalc */,
+				DE93BF5824294CBF00220071 /* Sensors */,
+				DE285F292418515200ABDA2F /* FileManager */,
+				DEB7187C200FD82D00C566A9 /* AppDelegate.swift */,
+				DEB7187E200FD82D00C566A9 /* ViewController.swift */,
+				DEB71880200FD82D00C566A9 /* Main.storyboard */,
+				DEB71883200FD82D00C566A9 /* Assets.xcassets */,
+				DEB71885200FD82D00C566A9 /* LaunchScreen.storyboard */,
+				DEB71888200FD82D00C566A9 /* Info.plist */,
+			);
+			path = Accel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB71878200FD82D00C566A9 /* Accel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB7188B200FD82D00C566A9 /* Build configuration list for PBXNativeTarget "Accel" */;
+			buildPhases = (
+				DEB71875200FD82D00C566A9 /* Sources */,
+				DEB71876200FD82D00C566A9 /* Frameworks */,
+				DEB71877200FD82D00C566A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Accel;
+			productName = Accel;
+			productReference = DEB71879200FD82D00C566A9 /* Accel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB71871200FD82D00C566A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "David Chelidze";
+				TargetAttributes = {
+					DEB71878200FD82D00C566A9 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = DEB71874200FD82D00C566A9 /* Build configuration list for PBXProject "Accel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEB71870200FD82D00C566A9;
+			productRefGroup = DEB7187A200FD82D00C566A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB71878200FD82D00C566A9 /* Accel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB71877200FD82D00C566A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB71887200FD82D00C566A9 /* LaunchScreen.storyboard in Resources */,
+				DEB71884200FD82D00C566A9 /* Assets.xcassets in Resources */,
+				DEB71882200FD82D00C566A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB71875200FD82D00C566A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0EA0CD24562BA6005592D2 /* Stats.m in Sources */,
+				DE0EA0CE24562BA6005592D2 /* DescriptStatsWrapper.mm in Sources */,
+				DE93BF5A24294CD700220071 /* GyroscopeReader.swift in Sources */,
+				DEB7D57A242D67870045E438 /* GyroModel.swift in Sources */,
+				DE285F2B2418516100ABDA2F /* SensorFileManager.swift in Sources */,
+				DEB7187F200FD82D00C566A9 /* ViewController.swift in Sources */,
+				DE93BF5E2429510600220071 /* SensorManager.swift in Sources */,
+				DEB7187D200FD82D00C566A9 /* AppDelegate.swift in Sources */,
+				DE0EA0D024562BA6005592D2 /* BinaryTree.cpp in Sources */,
+				DEB7D578242D677B0045E438 /* AccelModel.swift in Sources */,
+				DE93BF5C24294CEA00220071 /* AccelerometerReader.swift in Sources */,
+				DE0EA0CF24562BA6005592D2 /* DescriptStats.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEB71880200FD82D00C566A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB71881200FD82D00C566A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEB71885200FD82D00C566A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB71886200FD82D00C566A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB71889200FD82D00C566A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEB7188A200FD82D00C566A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB7188C200FD82D00C566A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Accel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dummy.falldetectordatacollector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Accel/FeaturesCalc/Accel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DEB7188D200FD82D00C566A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Accel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dummy.falldetectordatacollector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Accel/FeaturesCalc/Accel-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB71874200FD82D00C566A9 /* Build configuration list for PBXProject "Accel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB71889200FD82D00C566A9 /* Debug */,
+				DEB7188A200FD82D00C566A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB7188B200FD82D00C566A9 /* Build configuration list for PBXNativeTarget "Accel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB7188C200FD82D00C566A9 /* Debug */,
+				DEB7188D200FD82D00C566A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEB71871200FD82D00C566A9 /* Project object */;
+}

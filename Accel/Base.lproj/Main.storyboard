@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Accel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o8-CN-cWF">
+                                <rect key="frame" x="50" y="311" width="275" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.3211143588" blue="0.31396467839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hxl-J8-TFn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="accelToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5b-pU-BpH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHe-HY-wSi">
+                                <rect key="frame" x="20" y="20" width="335" height="30"/>
+                                <state key="normal" title="Select activity type"/>
+                                <connections>
+                                    <action selector="selectActivityType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B03-NC-xRQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-Uw-9bn">
+                                <rect key="frame" x="109" y="557" width="157" height="30"/>
+                                <state key="normal" title="Cancel last experiment"/>
+                                <connections>
+                                    <action selector="removeLastExperimentData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQc-zK-aKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahQ-Ea-mTO">
+                                <rect key="frame" x="20" y="115.5" width="335" height="30"/>
+                                <state key="normal" title="Select user"/>
+                                <connections>
+                                    <action selector="selectUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZA-My-HJ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdJ-AK-Bxz">
+                                <rect key="frame" x="115" y="607" width="145" height="30"/>
+                                <state key="normal" title="Remove all local data"/>
+                                <connections>
+                                    <action selector="clearAllExperimentsData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dz-iy-BCW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv8-S4-dBI">
+                                <rect key="frame" x="20" y="50" width="335" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xL-7R-itn">
+                                <rect key="frame" x="20" y="145.5" width="335" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9t-ST-ULR">
+                                <rect key="frame" x="8" y="376" width="359" height="161"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hr-FV-bBt">
+                                <rect key="frame" x="239" y="20" width="116" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Share Records  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareRecords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhC-Cb-V0e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ahQ-Ea-mTO" firstAttribute="top" secondItem="Dv8-S4-dBI" secondAttribute="bottom" constant="15" id="6ny-An-9sQ"/>
+                            <constraint firstItem="7xL-7R-itn" firstAttribute="top" secondItem="ahQ-Ea-mTO" secondAttribute="bottom" id="D1V-Vi-mCW"/>
+                            <constraint firstItem="0hr-FV-bBt" firstAttribute="centerY" secondItem="xHe-HY-wSi" secondAttribute="centerY" id="DM6-Lh-i6W"/>
+                            <constraint firstItem="6o8-CN-cWF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EgT-AA-kGt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7xL-7R-itn" secondAttribute="trailing" constant="20" id="IXq-79-l5J"/>
+                            <constraint firstItem="nOk-Uw-9bn" firstAttribute="top" secondItem="U9t-ST-ULR" secondAttribute="bottom" constant="20" id="MQv-6M-5PQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xHe-HY-wSi" secondAttribute="trailing" constant="20" id="NNl-Gv-LWr"/>
+                            <constraint firstItem="Dv8-S4-dBI" firstAttribute="top" secondItem="xHe-HY-wSi" secondAttribute="bottom" id="NZr-ZP-fR6"/>
+                            <constraint firstItem="U9t-ST-ULR" firstAttribute="top" secondItem="6o8-CN-cWF" secondAttribute="bottom" constant="20" id="NcW-i2-0di"/>
+                            <constraint firstItem="NdJ-AK-Bxz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9o-AH-iNM"/>
+                            <constraint firstItem="7xL-7R-itn" firstAttribute="leading" secondItem="xHe-HY-wSi" secondAttribute="leading" id="RLp-pf-Dq4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o8-CN-cWF" secondAttribute="trailing" constant="50" id="RZG-ls-o5d"/>
+                            <constraint firstItem="6o8-CN-cWF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="WfT-wK-IlQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0hr-FV-bBt" secondAttribute="trailing" constant="20" id="XJq-Rr-6zF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NdJ-AK-Bxz" secondAttribute="bottom" constant="30" id="a9z-Tn-X9Q"/>
+                            <constraint firstItem="NdJ-AK-Bxz" firstAttribute="top" secondItem="nOk-Uw-9bn" secondAttribute="bottom" constant="20" id="e3X-F8-njO"/>
+                            <constraint firstItem="Dv8-S4-dBI" firstAttribute="leading" secondItem="xHe-HY-wSi" secondAttribute="leading" id="ifg-OD-jy5"/>
+                            <constraint firstItem="xHe-HY-wSi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="in7-4P-qN6"/>
+                            <constraint firstItem="xHe-HY-wSi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jjY-id-yMF"/>
+                            <constraint firstItem="nOk-Uw-9bn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfz-vp-7SW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dv8-S4-dBI" secondAttribute="trailing" constant="20" id="nrs-O6-x7b"/>
+                            <constraint firstItem="ahQ-Ea-mTO" firstAttribute="leading" secondItem="xHe-HY-wSi" secondAttribute="leading" id="s5r-Rk-cnE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahQ-Ea-mTO" secondAttribute="trailing" constant="20" id="skl-bc-dLf"/>
+                            <constraint firstItem="U9t-ST-ULR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="wh4-Lb-p5i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U9t-ST-ULR" secondAttribute="trailing" constant="8" id="xha-Jc-tmY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accelToggle" destination="6o8-CN-cWF" id="T3Y-CN-Y8V"/>
+                        <outlet property="btnActivityType" destination="xHe-HY-wSi" id="2yN-OZ-l5Z"/>
+                        <outlet property="btnActivityUser" destination="ahQ-Ea-mTO" id="Vz9-fO-mzG"/>
+                        <outlet property="btnCancelLastExperiment" destination="nOk-Uw-9bn" id="Ics-1V-Ivv"/>
+                        <outlet property="btnRemoveAllLocalData" destination="NdJ-AK-Bxz" id="bE1-fb-h2N"/>
+                        <outlet property="btnShareRecordings" destination="0hr-FV-bBt" id="i4o-wE-UlK"/>
+                        <outlet property="lblAcitivtyUser" destination="7xL-7R-itn" id="6HP-qd-2uW"/>
+                        <outlet property="lblActivityType" destination="Dv8-S4-dBI" id="3nB-i3-DXZ"/>
+                        <outlet property="textExperimentFilesList" destination="U9t-ST-ULR" id="g3m-Tm-kxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="87.706146926536732"/>
+        </scene>
+    </scenes>
+</document>
